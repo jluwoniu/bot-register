@@ -1,0 +1,24 @@
+[package]
+name = "bot-register"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rsa = "0.6.1"
+reqwest = { version = "0.11", features = ["blocking", "json","native-tls"] }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+native-windows-gui = "1.0"
+native-windows-derive = "1.0"
+rand = "0.8"
+log = "0.4"
+log4rs = "1.1"
+chrono = "0.4"
+opener = "0.5"
+base64 = "0.13"
+sha2 = "0.10.2"
+crypto2 = {git = "https://github.com/shadowsocks/crypto2.git"}
+clipboard-win = "4.4.1"
