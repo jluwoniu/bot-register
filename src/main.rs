@@ -77,21 +77,24 @@ impl BasicApp {
                 now.add(Duration::days(1))
             }
             1 => {
-                 now.add(Duration::days(8))
+                 now.add(Duration::days(7))
             }
             2 => {
-                now.add(Duration::days(31))
+                now.add(Duration::days(15))
             }
             3 => {
-                now.add(Duration::days(93))
+                now.add(Duration::days(31))
             }
             4 => {
-                now.add(Duration::days(183))
+                now.add(Duration::days(93))
             }
             5 => {
-                now.add(Duration::days(368))
+                now.add(Duration::days(183))
             }
             6 => {
+                now.add(Duration::days(368))
+            }
+            7 => {
                 now.add(Duration::days(36600))
             }
             _ => now.add(Duration::days(1))
@@ -158,7 +161,7 @@ mod basic_app_ui {
 
             nwg::ComboBox::builder()
                 .parent(&data.window)
-                .collection(vec!["天卡","周卡","月卡","季卡","半年","年卡","永久"])
+                .collection(vec!["天卡","周卡","半月","月卡","季卡","半年","年卡","永久"])
                 .selected_index(Some(0))
                 .build(&mut data.input_type)?;
 
